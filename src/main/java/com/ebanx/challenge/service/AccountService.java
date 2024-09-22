@@ -108,7 +108,7 @@ public class AccountService {
 			throw new AccountNotFoundException("Origin not found.");
 		
 		if(accountDestination == null) {
-			String id = this.createAccount(destination, amount).getDestination().getId();
+			String id = this.createAccount(destination, 0).getDestination().getId();
 			accountDestination = findAccount(id);
 		}
 		
