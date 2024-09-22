@@ -10,7 +10,7 @@ import lombok.Data;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class EventResponse {
 
-	private AccountDTO destination;
 	private AccountDTO origin;
+	private AccountDTO destination;
 
 }
